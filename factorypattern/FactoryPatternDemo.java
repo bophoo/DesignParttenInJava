@@ -1,5 +1,3 @@
-package com.bophoo.factorypattern;
-
 /**
  * 工厂模式
  工厂模式（Factory Pattern）是 Java 中最常用的设计模式之一。这种类型的设计模式属于创建型模式，它提供了一种创建对象的最佳方式。
@@ -41,13 +39,13 @@ public class FactoryPatternDemo {
         /**
          * 优化版反射工厂模式示例
          */
-        Sharp circleRef = (Circle)ReflextionSharpFactory.getSharp(Circle.class);
+        Sharp circleRef = (Circle) ReflextionSharpFactory.getSharp(Circle.class);
         circleRef.draw();
 
-        Sharp rectangleRef = (Rectangle)ReflextionSharpFactory.getSharp(Rectangle.class);
+        Sharp rectangleRef = (Rectangle) ReflextionSharpFactory.getSharp(Rectangle.class);
         rectangleRef.draw();
 
-        Sharp squareRef = (Square)ReflextionSharpFactory.getSharp(Square.class);
+        Sharp squareRef = (Square) ReflextionSharpFactory.getSharp(Square.class);
         squareRef.draw();
     }
 }

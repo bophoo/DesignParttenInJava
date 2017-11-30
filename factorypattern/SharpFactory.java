@@ -1,4 +1,5 @@
-package com.bophoo.factorypattern;
+
+
 
 /**
  * 图形工厂，根据图形类型返回对应图形类

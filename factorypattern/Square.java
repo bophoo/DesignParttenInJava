@@ -1,5 +1,3 @@
-package com.bophoo.factorypattern;
-
 public class Square implements Sharp {
     @Override
     public void draw() {
