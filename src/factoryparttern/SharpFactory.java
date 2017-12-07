@@ -1,11 +1,11 @@
-
+package factoryparttern;
 
 
 /**
  * 图形工厂，根据图形类型返回对应图形类
  */
 public class SharpFactory {
-    public static Sharp getSharp(String sharpType) {
+    public static Shape getSharp(String sharpType) {
         switch (sharpType) {
             case "circle":
                 return new Circle();

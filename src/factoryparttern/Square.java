@@ -1,4 +1,6 @@
-public class Square implements Sharp {
+package factoryparttern;
+
+public class Square implements Shape {
     @Override
     public void draw() {
         System.out.printf("draw a square\n");
