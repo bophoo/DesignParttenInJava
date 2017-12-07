@@ -29,25 +29,25 @@ public class FactoryPatternDemo {
 /**
  * 工厂模式示例
  */
-        Shape circle = SharpFactory.getSharp("circle");
+        Shape circle = ShapeFactory.getShape("circle");
         circle.draw();
 
-        Shape rectangle = SharpFactory.getSharp("rectangle");
+        Shape rectangle = ShapeFactory.getShape("rectangle");
         rectangle.draw();
 
-        Shape square = SharpFactory.getSharp("square");
+        Shape square = ShapeFactory.getShape("square");
         square.draw();
 
         /**
          * 优化版反射工厂模式示例
          */
-        Shape circleRef = (Circle) ReflextionSharpFactory.getSharp(Circle.class);
+        Shape circleRef = (Circle) ReflextionShapeFactory.getShape(Circle.class);
         circleRef.draw();
 
-        Shape rectangleRef = (Rectangle) ReflextionSharpFactory.getSharp(Rectangle.class);
+        Shape rectangleRef = (Rectangle) ReflextionShapeFactory.getShape(Rectangle.class);
         rectangleRef.draw();
 
-        Shape squareRef = (Square) ReflextionSharpFactory.getSharp(Square.class);
+        Shape squareRef = (Square) ReflextionShapeFactory.getShape(Square.class);
         squareRef.draw();
     }
 }
